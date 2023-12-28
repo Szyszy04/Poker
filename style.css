@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(img/red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokertitle {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
+}
+
+.pokertitle {
+    top: 20%;
+}
+
+.hobby-content {
+    font-size: 180px;
+    color: #36353B;
+    -webkit-text-stroke: 2px #EAD4AB;
+    cursor: pointer;
+}
+
+.pokertitle.disable,
+.poker-start.disable {
+    display: none;
+}
+
+.poker-content {
+    font-size: 270px;
+    color: #36353B;
+    -webkit-text-stroke: 6px #E4C47B;
+}
+
+.poker-start {
+    font-family: fantasy;
+    font-size: 60px;
+    background: linear-gradient(to bottom, #FEF9CF 0%, #E4C47B 70%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 5px #36353B;
+    color: transparent;
+    cursor: pointer;
+}
+
+.deck.disable{
+    display: none;
+}
+.deck img{
+    width: 268px;
+    height: 412px;
+}
+.card-spades{
+    rotate: -20deg;
+    top: 70%;
+    position: fixed;
+    left: 36%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-spades:hover{
+    top: 64%;
+    box-shadow: 0px -3px 23px -4px rgba(255, 255, 255, 1);
+}
+.card-spades.active{
+    top: -25%;
+    rotate: -90deg;
+    width: 450px;
+    height: 850px;
+    left: 35%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.card-spades.active:hover{
+    box-shadow: 0px 0px 0px -0px rgba(255, 255, 255, 0);
+}
+.card-hearts{
+    rotate: -5deg;
+    top: 71%;
+    position: fixed;
+    left: 39%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-hearts:hover{
+    top: 65%;
+    box-shadow: 0px -3px 23px -4px rgba(255, 255, 255, 1);
+}
+.card-hearts.active{
+    top: -25%;
+    rotate: -90deg;
+    width: 450px;
+    height: 850px;
+    left: 35%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.card-hearts.active:hover{
+    box-shadow: 0px 0px 0px -0px rgba(255, 255, 255, 0);
+}
+.card-diamonds{
+    rotate: 5deg;
+    top: 72%;
+    position: fixed;
+    right: 38%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-diamonds:hover{
+    top: 67%;
+    box-shadow: 0px -3px 23px -4px rgba(255, 255, 255, 1);
+}
+.card-diamonds.active{
+    top: -25%;
+    rotate: 90deg;
+    width: 450px;
+    height: 850px;
+    left: 35%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.card-diamonds.active:hover{
+    box-shadow: 0px 0px 0px -0px rgba(255, 255, 255, 0);
+}
+.card-clubs{
+    rotate: 20deg;
+    top: 75%;
+    position: fixed;
+    right: 35%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-clubs:hover{
+    top: 69%;
+    box-shadow: 0px -3px 23px -4px rgba(255, 255, 255, 1);
+}
+.card-clubs.active{
+    top: -25%;
+    rotate: 90deg;
+    width: 450px;
+    height: 850px;
+    left: 35%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.card-clubs.active:hover{
+    box-shadow: 0px 0px 0px -0px rgba(255, 255, 255, 0);
+}
+
+.info-spades.disable{
+    display: none;
+}
+.info-hearts.disable{
+    display: none;
+}
+.info-diamonds.disable{
+    display: none;
+}
+.info-clubs.disable{
+    display: none;
+}
+.info-spades, .info-hearts, .info-diamonds, .info-clubs{
+    display: block;
+    width: 44%;
+    top: 18%;
+    right: 30%;
+    position: fixed;
+}
+.title-spades, .title-hearts, .title-diamonds, .title-clubs{
+    font-size: xxx-large;
+    color: #E4C47B;
+    padding-bottom: 12px;
+}
+.text-spades, .text-hearts, .text-diamonds, .text-clubs{
+    font-size: x-large;
+    color: #FEF9CF;
+}
+
+.token.disable{
+    display: none;
+}
+.token{
+    height: 70px;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.token:hover{
+    filter: drop-shadow(0px 0px 8px #ffffff);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .hobby-content {
+        font-size: 130px;
+    }
+    .poker-content {
+        font-size: 210px;
+    }
+    .poker-start {
+        font-size: 50px;
+    }
+    .deck img{
+        width: 180px;
+        height: 270px;
+    }
+    .card-spades{
+        left: 40%;
+    }
+    .card-hearts{
+        left: 43%;
+    }
+    .card-diamonds{
+        right: 41%;
+    }
+    .card-clubs{
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    body {
+        background-size: auto;
+    }
+    .card-hearts {
+        left: 40%;
+    }
+    .card-spades {
+        left: 37%;
+    }
+}
